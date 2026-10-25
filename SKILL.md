@@ -43,10 +43,10 @@ help page. If neither, it belongs nowhere.
 
 ## Cut on sight
 
-- Implementation notes: "A fullscreen app covers this window.", "Uses the
-  compositor portal."
-- Obvious qualifiers: "in any app", "here", "simply", "just".
-- Narrated basics: "Click Start to begin."
+- Implementation notes: "Images are cached in IndexedDB.", "Built with
+  Electron."
+- Obvious qualifiers: "in any workspace", "here", "simply", "just".
+- Narrated basics: "Click a file to open it."
 - Defensive disclaimers: "Results may vary."
 - Tooltips that repeat a label.
 
@@ -59,7 +59,7 @@ The full pattern list, with reasons: `references/patterns.md`.
 - Empty states that name the next action.
 - Constraints that apply at that moment, such as a disabled control with a
   reason.
-- Units and formats: "ms", "s", "until I press stop".
+- Units and formats: "MB", "mm", "24-hour time".
 
 Placement rules: `references/placement.md`.
 
@@ -68,7 +68,7 @@ Placement rules: `references/placement.md`.
 - [ ] Every visible string helps the user act or recover.
 - [ ] No text explains how the app works.
 - [ ] No label restates a visible control.
-- [ ] No "in any app", "here", or "simply".
+- [ ] No "on this screen", "here", or "simply".
 - [ ] Secondary detail is in an info icon or the help page.
 - [ ] A competent user would not be annoyed to read it twice.
 

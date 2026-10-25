@@ -8,9 +8,9 @@ info icon or the help page.
 
 Agents fill interfaces with text nobody asked for:
 
-- implementation notes: "A fullscreen app covers this window"
-- obvious qualifiers: "F5 starts, F6 stops, in any app"
-- narrated basics: "Click Start to begin"
+- implementation notes: "Images are cached in IndexedDB"
+- obvious qualifiers: "Search all files on your computer"
+- narrated basics: "Type a note, then press Save"
 - defensive disclaimers: "Results may vary"
 
 The user does not need any of it to act. It adds reading, pushes the controls

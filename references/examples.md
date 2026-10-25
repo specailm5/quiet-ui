@@ -1,65 +1,63 @@
 # Worked examples
 
-## Desktop utility
+## Photo gallery
 
-Before: `A fullscreen app covers this window. The keys still work.`
+Before: `Images are cached in IndexedDB.`
 
-After: nothing in the window. The README explains fullscreen behavior.
+After: nothing. The help page explains offline behavior.
 
-Why: the note describes a stacking rule the user cannot change, and the keys
-already work. It is an implementation note with a reassurance attached.
+Why: the cache name is machinery the user cannot act on.
 
-## Global shortcut status
+## Search field
 
-Before: `F5 starts, F6 stops, in any app`
+Before: `Search all files on your computer`
 
-After: nothing. The fields read `Start key F5` and `Stop key F6`.
+After: nothing, or `Search files`.
 
-Why: the fields are the source of truth. "In any app" explains what a global
-shortcut is to the person who just set one.
+Why: the field label and placeholder already say what it searches.
 
-## Start button
+## Note editor
 
-Before: `Click Start to begin clicking.`
+Before: `Type a note, then press Save.`
 
-After: nothing. The button says `Start`.
+After: nothing. The editor and the Save button show the step.
 
-Why: the label is the instruction.
+Why: the sentence narrates the interface.
 
-## Success
+## Music player
 
-Before: `Success! Your settings were saved successfully.`
+Before: `Playing. Press Pause to pause.`
 
-After: `Saved.`
+After: `Playing.`
 
-Why: one word confirms the result. The rest repeats it.
+Why: the button already says Pause. The state is the useful part.
 
-## Error
+## Save tooltip
 
-Before: `Oops! Something went wrong.`
+Before: a `Save` button with the tooltip `Save the note`.
 
-After: `Could not open /dev/uinput. Run the setup script, then log in again.`
-
-Why: the second version names the failure and the next step.
-
-## Disabled control
-
-Before, always visible: `Note: the stop key needs the GlobalShortcuts portal.`
-
-After, shown only when the binding fails: `Keys unavailable: the desktop
-denied the binding. Use the buttons.`
-
-Why: the constraint appears when it applies, with an action.
-
-## Tooltip
-
-Before: a `Start` button with the tooltip `Start the clicker`.
-
-After: no tooltip, or `F5 also starts it.`
+After: no tooltip, or `Ctrl+S`.
 
 Why: a tooltip must add a fact the label cannot carry.
 
-## Settings
+## Billing error
+
+Before: `Oops! Something went wrong.`
+
+After: `Card declined. Check the number and try again.`
+
+Why: the second version names the failure and the next step.
+
+## Disabled delete
+
+Before, always visible: `Note: deleting requires the file to be closed.`
+
+After, shown only when the control is disabled: `Close the file in the other
+app to delete it.`
+
+Why: the constraint appears when it applies, with an action.
+
+## Settings dialog
 
 Before: a dialog titled `Settings`, a heading `Settings`, and a line `Change
 your settings below.`
@@ -69,11 +67,11 @@ After: the dialog title and the controls. No heading, no line.
 Why: the title and the controls are the interface. The heading and the sentence
 repeat them.
 
-## Onboarding
+## First run
 
-Before: a permanent paragraph under the title: `Welcome! This tool repeats
-mouse clicks. Choose an interval, then press Start.`
+Before: a permanent paragraph under the title: `Welcome! This is a notes app.
+Type a note, then press Save.`
 
-After: nothing, or a first-run empty state: `No runs yet. Press Start to begin.`
+After: nothing, or a first-run empty state: `No notes yet. Press New note.`
 
 Why: orientation belongs to the first run, not to every session.

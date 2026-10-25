@@ -5,31 +5,29 @@ phrase: the same noise appears in many words.
 
 ## Implementation notes
 
-**Tell:** "A fullscreen app covers this window. The keys still work.", "Uses
-the compositor portal", "The device is created through uinput".
+**Tell:** "Images are cached in IndexedDB.", "Built with Electron.", "The
+preview is rendered with WebGL."
 
-**Why:** the user does not care how it works or what might cover it. A
-permanent note about a limitation reads as an excuse and costs reading on every
-session.
+**Why:** the user does not care how it works. A permanent note about the
+machinery reads as a boast or an excuse and costs reading on every session.
 
 **Fix:** delete it. If the fact changes what the user can do, move it to the
 help page or behind an info icon.
 
 ## Obvious qualifiers
 
-**Tell:** "in any app", "on your screen", "click here", "press the button",
-"simply", "just".
+**Tell:** "in any workspace", "on this screen", "click here", "simply", "just".
 
-**Why:** the control already says it. "F5 starts in any app" explains what a
-global key is to someone who already set one.
+**Why:** the control already says it. "Search all files on your computer" under
+a field labeled "Search" explains the obvious.
 
 **Fix:** state the noun and the action, or say nothing when the field label
 already carries it.
 
 ## Narrated basics
 
-**Tell:** "Click Start to begin", "Enter a number", "Select a mouse button",
-"This window lets you...".
+**Tell:** "Click a file to open it", "Type a name to name the file", "Select a
+color", "This window lets you...".
 
 **Why:** it treats a competent user as someone who needs the interface read
 aloud, and it pushes the real controls down the window.
@@ -38,8 +36,8 @@ aloud, and it pushes the real controls down the window.
 
 ## Defensive disclaimers
 
-**Tell:** "Results may vary", "This may not work on every system", "Note: this
-feature depends on your desktop".
+**Tell:** "Results may vary", "This may not work on every network", "Note: this
+feature depends on your device".
 
 **Why:** a warning before anything goes wrong is noise. When something does go
 wrong, the user needs the specific failure, not a general hedge.
@@ -49,28 +47,27 @@ applies. Put the rest in the help page.
 
 ## Label-echo tooltips
 
-**Tell:** a "Start" button with the tooltip "Start the clicker".
+**Tell:** a "Save" button with the tooltip "Save the note".
 
 **Why:** the tooltip is a second copy of the same words.
 
 **Fix:** no tooltip, or a tooltip that adds information the label cannot, such
-as the exact key that fires.
+as the keyboard shortcut "Ctrl+S".
 
 ## Status messages that repeat the controls
 
-**Tell:** "Running. F6 or Stop ends it." while the button reads STOP and the
-stop field reads F6.
+**Tell:** "Playing. Press Pause to pause." while the button reads Pause.
 
 **Why:** the state is useful; the instructions are not. The user can see the
-button and the key.
+button.
 
-**Fix:** "Running." Keep the count, the failure, or the next step.
+**Fix:** "Playing." Keep the count, the failure, or the next step.
 
 ## Onboarding paragraphs
 
-**Tell:** a two-sentence welcome under the title of a one-window utility.
+**Tell:** a two-sentence welcome under the title of a notes app.
 
-**Why:** the user opened the tool to use it, not to read about it.
+**Why:** the user opened the app to use it, not to read about it.
 
 **Fix:** delete. If a first step is genuinely required, make it the empty state
 with one action.
@@ -83,22 +80,22 @@ may take a moment".
 **Why:** an apology does not tell the user what failed or what to do. A hedge
 makes a specific failure sound uncertain.
 
-**Fix:** name the failure and the next step: "Could not open /dev/uinput. Run
-the setup script, then log in again."
+**Fix:** name the failure and the next step: "Card declined. Check the number
+and try again."
 
 ## Redundant headings
 
-**Tell:** "Settings" as the only heading inside a settings window, "Actions"
-above a single button.
+**Tell:** "Settings" as the only heading inside a settings window, "Files"
+above a file list.
 
-**Why:** the window title and the control already carry the label.
+**Why:** the window title and the list already carry the label.
 
 **Fix:** remove the heading, or make it name a real group.
 
 ## Technical boilerplate in the main view
 
-**Tell:** portal names, kernel modules, API versions, file paths, and protocol
-details shown to the user by default.
+**Tell:** cache names, rendering engines, API versions, file paths, and
+protocol details shown to the user by default.
 
 **Why:** the user needs the outcome, not the machinery. Technical detail
 belongs in the help page or a diagnostic view.
@@ -107,7 +104,7 @@ belongs in the help page or a diagnostic view.
 
 ## Success text that congratulates itself
 
-**Tell:** "Success! Your settings were saved successfully."
+**Tell:** "Success! Your note was saved successfully."
 
 **Why:** the first word already says it. The rest repeats the word.
 

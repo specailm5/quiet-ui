@@ -6,6 +6,11 @@ and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
 ## [Unreleased]
 
+### Changed
+
+- Replaced the examples tied to the original tool with examples from a photo
+  gallery, a music player, a notes app, and a billing form.
+
 ## [2.0.0] - 2026-10-25
 
 ### Added

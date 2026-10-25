@@ -1,0 +1,27 @@
+name: Bug report
+description: Something in the skill is wrong, unclear, or produces bad UI text.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Keep the report specific. Quote the text or rule.
+  - type: textarea
+    id: text
+    attributes:
+      label: The text or rule
+      description: Quote the string or rule that is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+      description: What should the skill say or do instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: "2.0.0"

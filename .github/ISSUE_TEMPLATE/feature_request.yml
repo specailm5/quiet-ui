@@ -1,0 +1,26 @@
+name: Pattern or example
+description: Propose a new anti-pattern, placement rule, or before/after example.
+title: "[pattern] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: pattern
+    attributes:
+      label: The pattern
+      description: Quote a real interface string and say where it appears.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it fails
+      description: Who is it for, and what does the user lose by reading it?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: The fix
+      description: What should replace it, or where should the fact go?
+    validations:
+      required: true
